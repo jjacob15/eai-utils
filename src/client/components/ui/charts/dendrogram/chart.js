@@ -155,11 +155,11 @@ chart.draw = function (el, props) {
       .ticks(4).tickFormat(d => Math.round((logBase(d) * 100)) / 100);
 
     var bBox = d3.select(el).select('.nodes').node().getBBox();
-    const axisY = (bBox.height - root.dy / 3) > 100 ? bBox.height - root.dy / 3 : bBox.height;
-
+    // const axisX = (bBox.height - root.dy / 3) > 100 ? bBox.height - root.dy / 3 : bBox.height;
+    const axisX = bBox.height / 2 + (root.dx - x0)/2 ;
 
     g.select(".x.axis")
-      .attr("transform", "translate(0," + axisY + ")")
+      .attr("transform", "translate(0," + axisX + ")")
       .call(xAxis);
   }
 
@@ -171,7 +171,7 @@ chart.draw = function (el, props) {
 
   //artificially set the height
   var dDim = d3.select(el).select('.dendrogram').node().getBBox();
-  d3.select(el).select('svg').style('height',`${dDim.height + 30}px`)
+  d3.select(el).select('svg').style('height', `${dDim.height + 30}px`)
 };
 
 export default chart;

@@ -4,6 +4,74 @@ import Dendrogram from '../ui/charts/dendrogram';
 var data = {
     name: "flare",
     children: [{
+        name: 'one level'
+    }, {
+        name: 'second level',
+        children: [{
+            name: 'child'
+        }]
+    }, {
+        name: 'third level',
+        children: [{
+            name: 'second level',
+            children: [{
+                name: 'child 1'
+            }, {
+                name: 'child 2'
+            }]
+        }]
+    }, {
+        name: 'fourth level',
+        children: [{
+            name: 'one level'
+        }, {
+            name: 'second level',
+            children: [{
+                name: 'child 1'
+            }, {
+                name: 'child 2'
+            }]
+        }, {
+            name: 'third level',
+            children: [{
+                name: 'second level',
+                children: [{
+                    name: 'child 1'
+                }, {
+                    name: 'child 2'
+                }, {
+                    name: 'child 3'
+                }]
+            }]
+        }]
+    }, {
+        name: 'fifth level',
+        children: [{
+            name: 'fourth level',
+            children: [{
+                name: 'one level'
+            }, {
+                name: 'second level',
+                children: [{
+                    name: 'child 1'
+                }, {
+                    name: 'child 2'
+                }]
+            }, {
+                name: 'third level',
+                children: [{
+                    name: 'second level',
+                    children: [{
+                        name: 'child 1'
+                    }, {
+                        name: 'child 2'
+                    }, {
+                        name: 'child 3'
+                    }]
+                }]
+            }]
+        }]
+    }, {
         name: "analytics",
         children: [{
             name: "cluster",
@@ -196,7 +264,7 @@ class PlayGround extends React.Component {
     }
     handleAdd(e) {
         const len = this.state.data.children.length;
-        if (len === 6) {
+        if (len === data.children.length) {
             this.setState({
                 data: this.getInitial()
             })
