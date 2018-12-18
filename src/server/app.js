@@ -1,11 +1,6 @@
-require('express-async-errors');
-if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
-const error = require('./middlewares/error');
-const cors = require('cors');
-require('./setup/passport');
 
 const app = express();
 
@@ -21,7 +16,5 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
-// error handler
-app.use(error);
 
 module.exports = app;
