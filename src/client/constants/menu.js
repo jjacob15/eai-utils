@@ -1,5 +1,5 @@
 
-const line = { id: 'h1', label: 'Line', icon: 'home', link: '/' };
+const candle = { id: 'h1', label: 'Candle', icon: 'home', link: '/' };
 const dendrogram = { id: 'h6', label: 'Dendrogram', icon: 'help', link: '/dendrogram' };
 
 export default {
@@ -8,7 +8,7 @@ export default {
     content: [
       {
         label: 'Utils',
-        content: [line, dendrogram],
+        content: [candle, dendrogram],
       },
     ],
   },
