@@ -1,0 +1,42 @@
+.fb-timeliner {
+    h2 {
+        background: $primary-color;
+        color: #fff;
+        margin-top: 0;
+        padding: 15px;
+        font-size: 16px;
+        border-radius: 2px;
+        -webkit-border-radius: 4px;
+        font-weight: 300;
+    }
+
+    ul {
+        margin-left: 15px;
+        margin-bottom: 20px;
+
+        li {
+            margin-bottom: 3px;
+
+            a {
+                color: #999797;
+                border-left: 4px solid #d3d7dd;
+                padding-left: 10px;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                display: block;
+
+                &:hover {
+                    color: #999797;
+                    border-left: 4px solid #b1b1b1;
+                    padding-left: 10px;
+                }
+            }
+
+            &.active a {
+                color: #7a7a7a;
+                border-left: 4px solid #7a7a7a;
+                padding-left: 10px;
+            }
+        }
+    }
+}

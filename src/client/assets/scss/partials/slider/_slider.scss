@@ -1,0 +1,163 @@
+/*range slider start */
+
+.range-slider {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    b{
+        margin-top: -10px;
+    }
+}
+
+#RGB {
+    height: 10px;
+    background: rgb(128, 128, 128);
+}
+
+#RC .slider-selection {
+    background: #FF8282;
+}
+
+#RC .slider-handle {
+    background: red;
+}
+
+#GC .slider-selection {
+    background: #428041;
+}
+
+#GC .slider-handle {
+    background: green;
+}
+
+#BC .slider-selection {
+    background: #8283FF;
+}
+
+#BC .slider-handle {
+    border-bottom-color: blue;
+}
+
+#R,
+#G,
+#B {
+    width: 300px;
+}
+
+.range-slider-contain {
+    position: absolute;
+    bottom: 15px;
+}
+
+.slider-handle {
+    top: -5px;
+    background-image: linear-gradient(to bottom, $primary-color 0%, $primary-color 100%);
+    box-shadow: none;
+}
+
+.slider-tick,
+.slider-track {
+    background-image: linear-gradient(to bottom, #BDC3C7 0%, #BDC3C7 100%)
+}
+
+.slider-handle.custom::before {
+    line-height: 15px;
+    font-size: 35px;
+    color: $primary-color;
+}
+
+#slider12a,
+#slider12c {
+    .slider-track-high {
+        background: green;
+    }
+}
+
+#slider12b,
+#slider12c {
+    .slider-track-low {
+        background: red;
+    }
+}
+
+#slider12c .slider-selection {
+    background: yellow;
+}
+
+.slider-selection.tick-slider-selection {
+    background-image: linear-gradient(to bottom, lighten($primary-color,10%) 0%, lighten($primary-color,10%) 100%);
+}
+
+.slider-tick.in-selection {
+    background-image: linear-gradient(to bottom, lighten($primary-color,10%) 0%, lighten($primary-color,10%) 100%);
+}
+
+.slider.slider-horizontal {
+    .slider-track {
+        height: 2px;
+    }
+    .slider-tick,
+    .slider-handle {
+        top: -5px;
+        cursor: pointer;
+    }
+}
+
+
+/*range slider end */
+
+
+.slider.slider-horizontal .slider-track {
+    width: 90%;
+    margin-top: -5px;
+    top: 50%;
+    left: 10px;
+}
+
+
+
+
+/* AG slider styles */
+
+.slider-panel
+{
+    margin: 0pt 5pt 5pt 5pt;
+    padding: 5pt;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.slider-text-field{
+    width: 60px;
+    display: inline-block;
+    box-sizing: border-box;
+    float: right;
+}
+.slider-text-field > input[type="text"]{
+    width: 100%;
+    text-indent: 4pt;
+    font-size: 10pt;
+}
+.slider-text-field > input[type="number"]{
+    width: 100%;
+    text-indent: 4pt;
+    font-size: 10pt;
+}
+.slider-caption{
+    width: 60px;
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+    text-indent: 4pt;
+    font-size: 10pt;
+}
+.slider-range{
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5pt 0px;    
+}
+
+.slider-range > input[type="range"]{width: 100%}

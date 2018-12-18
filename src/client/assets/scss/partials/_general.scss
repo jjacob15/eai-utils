@@ -1,0 +1,1556 @@
+/**  =====================
+      Custom css start
+==========================  **/
+// @font-face {
+//     font-family: segoe UI;
+//     src: url("../fonts/SEGOEUI.TTF");
+// }
+
+body {
+  background-color: $theme-bg-color;
+  font-size: $theme-font-size;
+  overflow-x: hidden;
+  color: $theme-font-color;
+  font-family: $theme-font-family;
+  background-attachment: fixed;
+  // background-image: linear-gradient(45deg, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 20%,
+    transparent 20%,
+    transparent 40%,
+    rgba(255, 255, 255, 0.15) 40%,
+    rgba(255, 255, 255, 0.15) 60%,
+    transparent 60%,
+    transparent 80%,
+    rgba(255, 255, 255, 0.15) 80%,
+    transparent
+  );
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+* {
+  &:focus {
+    outline: none;
+  }
+}
+
+a {
+  font-size: 13px;
+  cursor: pointer;
+  @media only screen and(min-width: 1400px) {
+    font-size: 14px;
+  }
+  color: $inverse-color;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
+
+h4 {
+  font-size: 1.375rem;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+  // @media only screen and(min-width: 1400px) {
+  //     font-size: 14px;
+  // }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+.img-radius {
+  border-radius: 50%;
+}
+
+
+
+.title-content-font {
+  font-family: $theme-font-family-light;
+  a {
+    color: $primary-color !important;
+    font-size: inherit;
+    font-family: inherit;
+  }
+}
+.main-container {
+  margin: 0 auto;
+  margin-top: 56px;
+  position: relative;
+}
+
+.nohover {
+  &:hover {
+    box-shadow: none !important;
+  }
+}
+/* Start Card css */
+.card {
+  border-radius: 5px;
+  box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+  border: none;
+  margin-bottom: 22px;
+  // overflow: hidden;
+  transition: all 0.3s ease-in-out;
+
+  .card-footer {
+      background-color: $white-txt;
+      border-top: none;
+  }
+
+  .card-header {
+      background-color: transparent;
+      border-bottom: none;
+      padding: 25px 25px 20px 25px;
+
+      .card-header-left {
+          display: inline-block;
+      }
+
+      .card-header-right {
+          border-radius: 0 0 0 7px;
+          right: 10px;
+          top: 18px;
+          display: inline-block;
+          float: right;
+          padding: 7px 0;
+          position: absolute;
+          @media only screen and (max-width: 575px) {
+              display: none;
+          }
+
+          i {
+              margin: 0 11px;
+              cursor: pointer;
+              font-size: 12px;
+              color: #8c8c8c;
+              line-height: 2;
+
+              &.icofont.icofont-spinner-alt-5 {
+                  display: none;
+
+                  &:before {
+                      // content: "";
+                      // background-image: url('../../assets/images/load.png');
+                      // display: inline-block;
+                      // width: 20px;
+                      // height: 20px;
+                      // background-size: cover;
+                  }
+              }
+          }
+
+          .card-option {
+              width: 35px;
+              height: 20px;
+              overflow: hidden;
+              transition: 0.3s ease-in-out;
+
+              li {
+                  display: inline-block;
+              }
+          }
+
+          &:hover {
+              // .card-option {
+              //     width: 145px;
+              // }
+              //
+              // li {
+              //     &:first-child {
+              //         display: none;
+              //     }
+              // }
+          }
+      }
+
+      span {
+          display: block;
+          font-size: 13px;
+          margin-top: 5px;
+      }
+
+      + .card-block,
+      + .card-block-big {
+          padding-top: 0;
+      }
+
+      h5 {
+          margin-bottom: 0;
+          color: $inverse-color;
+          font-size: 14px;
+          font-weight: 600;
+          display: inline-block;
+          margin-right: 10px;
+          line-height: 1.4;
+      }
+  }
+
+  
+      .card-block {
+        padding: 25px;
+        @media only screen and (max-width: 480px){
+            padding: 20px;
+        }
+
+
+      table {
+          tr {
+              padding-bottom: 20px;
+          }
+      }
+
+      .sub-title {
+          font-size: 14px;
+          font-weight: 600;
+          letter-spacing: 1px;
+      }
+
+      .sub-title {
+        border-bottom: 1px solid rgba(204, 204, 204, 0.35);
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #2c3e50;
+    }
+
+      code {
+          background-color: #eee;
+          margin: 5px;
+          display: inline-block;
+      }
+
+      .dropdown-menu {
+          top: 38px;
+      }
+
+      p {
+          line-height: 1.4;
+      }
+
+      a {
+          &.dropdown-item {
+              margin-bottom: 0;
+              /* font-size: 14px;*/
+              font-size: 11px;
+              transition: 0.25s;
+
+              &:active,
+              .active {
+                  background-color: $primary-color;
+              }
+          }
+      }
+
+      &.remove-label i {
+          margin: 0;
+          padding: 0;
+      }
+
+      &.button-list span.badge {
+          margin-left: 5px;
+      }
+
+      .dropdown-menu {
+          background-color: #fff;
+          padding: 0;
+
+          .dropdown-divider {
+              background-color: #ddd;
+              margin: 3px 0;
+          }
+      }
+
+      .dropdown-menu > a {
+          padding:5px 16px;
+          line-height: 14px;
+      }
+
+      .dropdown-menu > li > a:focus,
+      .dropdown-menu > li > a:hover {
+          background-color: rgba(202, 206, 209, 0.5);
+      }
+
+      .dropdown-menu > li:first-child > a:first-child {
+          border-top-right-radius: 4px;
+          border-top-left-radius: 4px;
+      }
+
+      .badge-box {
+          padding: 10px;
+          margin: 12px 0;
+      }
+  }
+
+  .card-block-big {
+      padding: 35px;
+  }
+
+  .card-block-small {
+      padding: 15px;
+  }
+
+  &:hover {
+      box-shadow: 0 0 25px -5px #9e9c9e;
+  }
+  // .inner-card-block {
+  //     border: 1px solid #ddd;
+  // }
+
+
+  //show/hide-animate
+  .show-animate{
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.43s ease-in;
+    max-height: 1400px; //set a max height that is unachievable
+  }
+  .hide-animate{
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.43s ease-out;
+  }
+}
+/* End Card css */
+
+.landing-content {
+  float: unset;
+  right: 0;
+  position: relative;
+  display: block;
+}
+.landing-inner-content {
+  padding: 10px;
+}
+
+.main-body {
+  .page-wrapper {
+    transition: all ease-in 0.3s;
+  }
+}
+
+
+
+.padded-buttons {
+  .btn {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+}
+
+/**  =====================
+      Accordion css start
+==========================  **/
+// .accordion-panel{
+//   .content{
+//     overflow:hidden;
+//     transition:max-height 0.3s ease; // note that we're transitioning max-height, not height!
+//     height:auto;
+//     max-height:100px;
+//   }
+//   .collapsed {
+//     max-height:0;
+//   }
+// }
+.accordion-msg {
+  display: block;
+  color: #222222;
+  padding: 14px 20px;
+  border-top: 1px solid #ddd;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.accordion-msg:focus,
+.accordion-msg:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+.accordioncard-msg {
+  display: block;  
+  cursor: pointer;
+}
+
+.accordioncard-msg:focus,
+.accordioncard-msg:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+.faq-accordion .accordion-desc {
+  padding: 20px;
+}
+
+.accordion-desc {
+  color: #222222;
+  padding: 0 20px 0;
+}
+
+.accordioncard-desc {
+  color: #222222;
+  padding: 0;
+}
+
+#color-accordion .accordion-desc {
+  margin-top: 14px;
+}
+
+.ui-accordion-header-icon {
+  float: right;
+  font-size: 20px;
+}
+
+.accordion-title {
+  margin-bottom: 0;
+}
+
+.accordion-block {
+  padding: 0;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.color-accordion-block a {
+  &.ui-state-active,
+  &:focus,
+  &:hover {
+    color: #fff;
+    background: #4680ff;
+  }
+}
+
+a.bg-default:focus,
+a.bg-default:hover {
+  background-color: lighten($default-color, 10%) !important;
+  color: #fff;
+}
+
+a.bg-primary:focus,
+a.bg-primary:hover {
+  background-color: lighten($primary-color, 10%) !important;
+  color: #fff;
+}
+
+a.bg-success:focus,
+a.bg-success:hover {
+  background-color: lighten($success-color, 10%) !important;
+  color: #fff;
+}
+
+a.bg-info:focus,
+a.bg-info:hover {
+  background-color: lighten($info-color, 10%) !important;
+  color: #fff;
+}
+
+a.bg-warning:focus,
+a.bg-warning:hover {
+  background-color: lighten($warning-color, 10%) !important;
+  color: #fff;
+}
+
+a.bg-danger:focus,
+a.bg-danger:hover {
+  background-color: lighten($danger-color, 10%) !important;
+  color: #fff;
+}
+
+.collapseVisibility {
+  visibility: hidden;
+}
+/**====== Accordion css end ======**/
+
+.margin-bottom * {
+  margin-bottom: 1em;
+}
+
+.fa {
+  cursor: pointer;
+  color: #8c8c8c;
+}
+
+.modal-title {
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+}
+/**  =====================
+      Test Control program css start
+==========================  **/
+.test-control {
+  .spacedRow {
+    margin-bottom: 20px;
+  }
+}
+/**  =====================
+      Test Control program css end
+==========================  **/
+
+.main-body {
+  .page-wrapper {
+    padding: 12px;
+    transition: all ease-in 0.3s;
+  }
+}
+
+/*====== Padding css starts ======*/
+
+$i: 0;
+@while $i<=250 {
+  .p-#{$i} {
+    padding: #{$i}px;
+  }
+  $i: $i + 1;
+}
+
+/*====== Padding css ends ======*/
+
+/*====== Padding-top css starts ======*/
+
+$i: 0;
+@while $i<=250 {
+  .p-t-#{$i} {
+    padding-top: #{$i}px !important;
+  }
+  $i: $i + 1;
+}
+
+/*====== Padding-top css ends ======*/
+
+/*====== Padding-bottom css starts ======*/
+
+$i: 0;
+@while $i<=250 {
+  .p-b-#{$i} {
+    padding-bottom: #{$i}px !important;
+  }
+  $i: $i + 1;
+}
+
+/*====== Padding-bottom css ends ======*/
+
+/*====== Padding-left css starts ======*/
+
+$i: 0;
+@while $i<=250 {
+  .p-l-#{$i} {
+    padding-left: #{$i}px;
+  }
+  $i: $i + 1;
+}
+
+/*====== Padding-left css ends ======*/
+
+/*====== Padding-right css starts ======*/
+
+$i: 0;
+@while $i<=250 {
+  .p-r-#{$i} {
+    padding-right: #{$i}px;
+  }
+  $i: $i + 1;
+}
+
+/*====== Padding-right css ends ======*/
+
+/*====== Margin css starts ======*/
+
+$i: 0;
+@while $i<=50 {
+  .m-#{$i} {
+    margin: #{$i}px;
+  }
+  $i: $i + 1;
+}
+
+/*====== Margin css ends ======*/
+
+/*====== Margin-top css starts ======*/
+
+$i: 0;
+@while $i<=100 {
+  .m-t-#{$i} {
+    margin-top: #{$i}px;
+  }
+  $i: $i + 1;
+}
+
+/*====== Margin-top css ends ======*/
+
+/*====== Margin-Bottom css starts ======*/
+
+$i: 0;
+@while $i<=100 {
+  .m-b-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+  $i: $i + 1;
+}
+
+/*====== Margin-Bottom css ends ======*/
+
+/*====== Margin-left css starts ======*/
+
+$i: 0;
+@while $i<=100 {
+  .m-l-#{$i} {
+    margin-left: #{$i}px;
+  }
+  $i: $i + 1;
+}
+
+/*====== Margin-left css ends ======*/
+
+/*====== Margin-right css starts ======*/
+
+$i: 0;
+@while $i<=100 {
+  .m-r-#{$i} {
+    margin-right: #{$i}px;
+  }
+  $i: $i + 1;
+}
+
+/*====== Margin-right css ends ======*/
+
+/*====== Height css starts ======*/
+
+$i: 0;
+@while $i<=1000 {
+  .h-#{$i} {
+    height: #{$i}px;
+  }
+  $i: $i + 1;
+}
+
+/*====== Height css ends ======*/
+
+/*====== Display css starts ======*/
+
+$i: none, inline-block, inline-flex;
+@each $val in $i {
+  .d-#{$val} {
+    display: $val;
+  }
+}
+
+.show{
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.hide{
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/*====== display css ends ======*/
+
+/*====== Border-radius css starts ======*/
+
+$i: 0;
+@while $i<=10 {
+  .b-radius-#{$i} {
+    border-radius: #{$i}px !important;
+  }
+  $i: $i + 5;
+}
+
+.b-tr-r-0 {border-top-right-radius: 0px}
+.b-br-r-0 {border-bottom-right-radius: 0px}
+.b-tl-r-0 {border-top-left-radius: 0px}
+.b-bl-r-0 {border-bottom-left-radius: 0px}
+
+/*====== Border-radius css ends ======*/
+
+/*====== Font-size css starts ======*/
+
+$i: 10;
+@while $i<=80 {
+  .f-#{$i} {
+    font-size: #{$i}px;
+  }
+  $i: $i + 2;
+}
+
+/*====== Font-size css ends ======*/
+
+/*====== Font-weight css starts ======*/
+
+$i: 100, 300, 400, 600, 700, 900;
+@each $val in $i {
+  .f-w-#{$val} {
+    @if ($val==900) {
+      font-weight: 600;
+    } @else {
+      font-weight: $val;
+    }
+  }
+}
+
+/*====== Font-weight css ends ======*/
+
+/*====== Font-style css starts ======*/
+
+$i: normal, italic, oblique, initial, inherit;
+@each $val in $i {
+  .f-s-#{$val} {
+    font-style: $val;
+  }
+}
+
+/*====== Font-style css ends ======*/
+
+/*====== Text-align css starts ======*/
+
+$i: center, left, right;
+@each $val in $i {
+  .text-#{$val} {
+    text-align: $val;
+  }
+}
+
+/*====== Text-align css ends ======*/
+
+/*====== Text-Transform css starts ======*/
+
+$i: capitalize, uppercase, lowercase;
+@each $val in $i {
+  .text-#{$val} {
+    text-transform: $val;
+  }
+}
+
+/*====== Text-Transform css ends ======*/
+
+/*====== Text-Decoration css starts ======*/
+
+$i: overline, line-through, underline;
+@each $val in $i {
+  .text-#{$val} {
+    text-decoration: $val;
+  }
+}
+
+/*====== Text-Decoration css ends ======*/
+
+/*====== Vertical-Align css starts ======*/
+
+$i: baseline, sub, super, top, text-top, middle, bottom, text-bottom, initial, inherit;
+@each $val in $i {
+  .#{$val} {
+    vertical-align: $val;
+  }
+}
+
+/*====== Vertical-Align css ends ======*/
+
+/*====== Position css starts ======*/
+
+$i: static, absolute, fixed, relative, initial, inherit;
+@each $val in $i {
+  .pos-#{$val} {
+    position: $val;
+  }
+}
+
+/*====== Position css ends ======*/
+
+/*====== Float css starts ======*/
+
+$i: left, right, none;
+@each $val in $i {
+  .f-#{$val} {
+    float: $val;
+  }
+}
+
+/*====== Float css ends ======*/
+
+/*====== Overflow css starts ======*/
+
+$i: hidden, visible, auto;
+@each $val in $i {
+  .o-#{$val} {
+    overflow: $val;
+  }
+}
+
+/*====== Overflow css ends ======*/
+
+/*====== Image-sizes css starts ======*/
+
+$i: 20;
+@while $i<=100 {
+  .img-#{$i} {
+    width: #{$i}px;
+  }
+  $i: $i + 10;
+}
+
+/*====== Image-sizes css ends ======*/
+
+/*======= All-Borders-color css starts  ======= */
+
+$b-name:primary,
+warning,
+default,
+danger,
+success,
+inverse,
+info,
+theme;
+$b-color:$primary-color,
+$warning-color,
+$default-color,
+$danger-color,
+$success-color,
+$inverse-color,
+$info-color,
+$theme-border;
+@each $var in $b-name {
+    $i: index($b-name, $var);
+    .b-t-#{$var} {
+        border-top: 1px solid nth($b-color, $i);
+    }
+    .b-b-#{$var} {
+        border-bottom: 1px solid nth($b-color, $i);
+    }
+    .b-l-#{$var} {
+        border-left: 1px solid nth($b-color, $i);
+    }
+    .b-r-#{$var} {
+        border-right: 1px solid nth($b-color, $i);
+    }
+    .b-#{$var} {
+      border: 1px solid nth($b-color, $i);
+  }
+}
+
+
+/*======= All-Borders-color css ends  ======= */
+
+/*======= All-color css start  ======= */
+@each $value in $social-name {
+  $i: index($social-name, $value);
+
+/*  .bg-#{$value} {
+    background: linear-gradient(45deg, nth($social-color, $i), lighten(nth($social-color, $i), 10%));
+  }*/
+  .bg-#{$value} {
+    background: nth($social-color, $i);}
+
+  .bg-c-default {
+    background: #e1e7e9;
+  }
+
+  .text-#{$value} {
+    color: nth($social-color, $i);
+  }
+}
+@each $value in $color-name {
+  $i: index($color-name, $value);
+
+  .bg-g-#{$value} {
+    background: linear-gradient(45deg, nth($color-color, $i), lighten(nth($color-color, $i), 10%));
+  } 
+
+  .bg-#{$value} {
+    background: nth($color-color, $i);}
+
+  .text-#{$value} {
+    color: nth($color-color, $i);
+  }
+}
+/*======= All-color css ends  ======= */
+
+// ---------------tooltip------------------
+.eai-tooltip {
+  background: #232323;
+  color: white;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  align-items: center;
+  background-color: #232323;
+  color: #ffffff;
+  margin: 0.9em;
+  padding: 4px 10px;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-out;
+  font-size: 11px;
+  min-width:100px;
+  transition: none;
+  line-height: 16.5px;
+  text-transform: none;
+
+  &[data-placement^="top"] {
+    margin-bottom: 5px;
+
+    .arrow{
+      border-width: 5px 5px 0 5px;
+      border-color: #222 transparent transparent transparent;
+      bottom: -5px;
+      left: calc(50% - 5px);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  
+  &[data-placement^="bottom"] {
+    margin-top: 5px;
+    .arrow{
+      border-width: 0 5px 5px 5px;
+      border-color: transparent transparent #222 transparent;
+      top: -5px;
+      left: calc(50% - 5px);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  
+  
+  &[data-placement^="right"]{
+    margin-left: 5px;
+    .arrow{
+      border-width: 5px 5px 5px 0;
+      border-color: transparent #222 transparent transparent;
+      left: -5px;
+      top: calc(50% - 9px);
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  
+  &[data-placement^="left"] {
+    margin-right: 5px;
+    .arrow{
+      border-width: 5px 0 5px 5px;
+      border-color: transparent transparent transparent #222;
+      right: -5px;
+      top: calc(50% - 9px);
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  
+  &[data-x-out-of-boundaries] {
+      display: none;
+  }
+  
+  .arrow{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    margin: 5px;
+  }
+
+}
+
+//---------------tooltip end------------------
+/**  =====================
+      Wizard css start
+==========================  **/
+
+.cart-page .wizard > .content > .body {
+  width: 100%;
+  padding: 0;
+}
+
+.wizard > .content > .body {
+  width: 100%;
+}
+
+.card .wizard > .steps .current a {
+  outline: none;
+  border-radius: 5px;
+}
+
+.payment-card {
+  border: 1px solid #ccc;
+  border-radius: 0;
+  margin-bottom: 15px;
+  padding: 20px;
+
+  table {
+      margin-bottom: 0;
+  }
+}
+
+.confirmation {
+  text-align: center;
+  font-size: 80px;
+}
+
+.confirmation-icon {
+  color: $danger-color;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.post-input {
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  resize: none;
+}
+
+.file-upload-lbl {
+  max-width: 15px;
+  padding: 5px 0 0;
+}
+/**====== Wizard css end ======**/
+
+
+/**  =====================
+      Table css start
+==========================  **/
+
+.table-primary,
+.table-primary > td,
+.table-primary > th {
+    background-color: #4680FE;
+}
+
+.table-responsive {
+    display: inline-block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table.table-xl {
+    td,
+    th {
+        padding: 1.25rem 2rem;
+    }
+}
+
+.table.table-lg {
+    td,
+    th {
+        padding: 0.9rem 2rem;
+    }
+}
+
+.table.table-de {
+    td,
+    th {
+        padding: 0.75rem 2rem;
+    }
+}
+
+.table.table-sm {
+    td,
+    th {
+        padding: 0.6rem 2rem;
+    }
+}
+
+.table.table-xs {
+    td,
+    th {
+        padding: 0.4rem 2rem;
+    }
+}
+
+.table-columned {
+    > tbody > tr {
+        > th:first-child,
+        > td:first-child {
+            border-left: 0;
+        }
+    }
+
+    > tfoot > tr {
+        > th:first-child,
+        > td:first-child {
+            border-left: 0;
+        }
+    }
+
+    > tbody > tr {
+        > th,
+        > td {
+            border: 0;
+            border-left: 1px solid #ddd;
+        }
+    }
+
+    > tfoot > tr {
+        > th,
+        > td {
+            border: 0;
+            border-left: 1px solid #ddd;
+        }
+    }
+}
+
+.table-border-style {
+    padding: 0;
+
+    .table {
+        margin-bottom: 0;
+    }
+}
+
+.table > thead > tr > th {
+    border-bottom-color: #ccc;
+}
+
+.table-borderless tbody tr {
+    td,
+    th {
+        border: 0;
+    }
+}
+
+.table-bordered > thead > tr.border-solid {
+    > th,
+    > td {
+        border-bottom-width: 2px;
+    }
+
+    &:first-child {
+        > td,
+        th {
+            border-bottom-width: 2px;
+        }
+    }
+}
+
+.table-bordered > thead > tr.border-double {
+    > th,
+    > td {
+        border-bottom-width: 3px;
+        border-bottom-style: double;
+    }
+
+    &:first-child {
+        > td,
+        th {
+            border-bottom-width: 3px;
+            border-bottom-style: double;
+        }
+    }
+}
+/**====== Table css end ======**/
+/*======= Text css starts ===========*/
+
+$custom-color:#64b0f2;
+$pink-color:#ff7aa3;
+$muted-color:#919aa3;
+$dark-color:#2b3d51;
+$purple-color:#9261c6;
+$muted-color:#919aa3;
+$text-name:text-primary,
+text-warning,
+text-default,
+text-danger,
+text-success,
+text-inverse,
+text-info,
+text-custom,
+text-pink,
+text-muted,
+text-dark,
+text-purple,
+text-muted;
+$text-color:$primary-color,
+$warning-color,
+$default-color,
+$danger-color,
+$success-color,
+$inverse-color,
+$info-color,
+$custom-color,
+$pink-color,
+$muted-color,
+$dark-color,
+$purple-color,
+$muted-color;
+@each $var in $text-name {
+    $i: index($text-name, $var);
+    .#{$var} {
+        color: nth($text-color, $i) !important;
+    }
+}
+
+
+/*======= Text css ends ===========*/
+
+/*======= Label-color css starts  ======= */
+
+.label {
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+$label-name:primary,
+warning,
+default,
+danger,
+success,
+inverse,
+info;
+$label-color:$primary-color,
+$warning-color,
+$default-color,
+$danger-color,
+$success-color,
+$inverse-color,
+$info-color;
+@each $var in $label-name {
+  $i: index($label-name, $var);
+  .label-#{$var} {
+      background:linear-gradient(45deg, nth($label-color,$i), lighten(nth($label-color,$i),10%)) ;
+  }
+}
+.label-warning{
+  color:#fff;
+}
+
+/*======= Label-color css starts  ======= */
+
+/*======= All-Borders-color css starts  ======= */
+
+$border-name:primary,
+warning,
+default,
+danger,
+success,
+inverse,
+info;
+$border-color:$primary-color,
+$warning-color,
+$default-color,
+$danger-color,
+$success-color,
+$inverse-color,
+$info-color;
+@each $var in $border-name {
+    $i: index($border-name, $var);
+    table thead .border-bottom-#{$var} th,
+    table tbody .border-bottom-#{$var} th,
+    table tbody .border-bottom-#{$var} td {
+        border-bottom: 1px solid nth($border-color, $i);
+    }
+}
+
+
+/*======= All-Borders-color css ends  ======= */
+
+
+/*======= Background-color css starts  ======= */
+
+.bg-color-box {
+  text-align: center;
+  display: inline-block;
+  padding: 10px 20px;
+  box-shadow: 0 0 5px 0 rgba(128, 128, 128, 0.49);
+  font-weight: 600;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.bg-color-box span {
+  color: #fff;
+}
+
+$background-name:primary,
+warning,
+default,
+danger,
+success,
+inverse,
+info;
+$background-color:$primary-color,
+$warning-color,
+$default-color,
+$danger-color,
+$success-color,
+$inverse-color,
+$info-color;
+@each $var in $background-name {
+  $i: index($background-name, $var);
+  .bg-#{$var} {
+      background-color: nth($label-color, $i) !important;
+      color: #fff;
+  }
+}
+
+
+/*======= Background-color css end  ======= */
+
+
+/*======= Card-Border-Top-color css starts  ======= */
+
+$card-name:primary,
+warning,
+default,
+danger,
+success,
+inverse,
+info;
+$card-color:$primary-color,
+$warning-color,
+$default-color,
+$danger-color,
+$success-color,
+$inverse-color,
+$info-color;
+@each $var in $card-name {
+    $i: index($card-name, $var);
+    .card-border-#{$var} {
+        border-top: 4px solid nth($border-color, $i);
+    }
+}
+
+
+/*======= Card-Border-Top-color css ends  ======= */
+
+/*======= Ready to use css starts  ======= */
+.ms-container {
+  width: 100%;
+}
+
+.fa {
+  &:hover{
+    color:darken(#8c8c8c,20%);
+  }
+}
+/*======= Ready to use css ends  ======= */
+
+.justify-content-center {
+  justify-content: center;
+}
+
+/*======= Typography css start ========*/
+
+.blockquote {
+  border-left: 0.25rem solid #eceeef;
+  padding: 0.5rem 1rem;
+
+  &.blockquote-reverse {
+      text-align: right;
+      padding-right: 1rem;
+      border-right: 0.25rem solid #eceeef;
+      border-left: none;
+  }
+}
+
+.typography {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      margin: 0 0 20px;
+  }
+
+  small {
+      margin-left: 10px;
+      font-weight: 600;
+      color: #777;
+  }
+}
+
+.card-block.list-tag {
+  ul li {
+      display: block;
+      float: none;
+      margin-bottom: 5px;
+  }
+
+  ol li {
+      margin-bottom: 5px;
+  }
+}
+
+.inline-order-list {
+  margin-top: 50px;
+
+  h4,
+  p {
+      margin-bottom: 0;
+  }
+}
+
+.card-block ul li.list-inline-item {
+  display: inline-block;
+  float: left;
+}
+/*======= Typography css end ========*/
+
+/*============Form invalid start===================*/
+.invalid-feedback{
+    font-size:0.75rem;
+  }
+/*============Form invalid end===================*/
+
+
+/*============Charts start===================*/
+.chart{
+ 
+  .lineChart{
+    
+    .line{
+      stroke: $primary-color;
+      stroke-width: 2;
+      fill: none;
+    }
+    .axis{
+      line{
+        stroke: #495057;
+      }
+      path{
+        stroke: #495057;
+      }
+      text{
+        fill: #495057;
+      }
+    }
+    .axis.hidden{
+      text{
+        fill:transparent !important;
+      }
+      line.t{
+        stroke:transparent !important;
+      }
+    }
+
+    .axis.hideAxis{
+      path{
+        stroke:transparent !important;
+      }
+    }
+  }
+
+
+  .candleChart{
+    background: white;
+      .up{
+        stroke:$success-color;
+        transition:stroke 0.5s;
+      }
+      .up:hover{
+        stroke:lighten($success-color,10%)
+      }
+      .down{
+        stroke:$danger-color;
+        transition:stroke 0.5s;
+      }
+      .down:hover{
+        stroke:lighten($danger-color,10%)
+      }
+      .default{
+        stroke:$default-color;
+        transition:stroke 0.5s;
+      }
+      .default:hover{
+        stroke:lighten($default-color,10%)
+      }
+
+      .axis{
+        line{
+          stroke: #495057;
+        }
+        path{
+          stroke: #495057;
+        }
+        text{
+          fill: #495057;
+        }
+      }
+      .axis.hidden{
+        text{
+          fill:transparent !important;
+        }
+        line.t{
+          stroke:transparent !important;
+        }
+      }
+  }
+}
+  .chart.tooltip{
+    background: rgb(61, 61, 61);
+    font-size: 11px;
+    opacity: 1;
+    border: rgb(11, 11, 11);
+    padding:5px 8px;
+    border-radius: 4px;
+    color:white;
+    position: fixed;
+    z-index: 1000;
+  }
+/*============Charts end===================*/
+
+/*============Highlighted Header start===================*/
+.highhead {
+      width: 100%;      
+      opacity: 0.9;
+      background-color: #2c3e50;
+      color: #ffffff;
+      font-size: 14px;
+      height: 40px;
+      padding:11px;
+  }
+/*============Highlighted Header end===================*/
+
+/* =========== Segment Header Start ================== */
+
+
+.segment-image-container {
+  position: absolute;
+  top: 15px;
+  left:20px;
+  
+}
+
+.segment-image img {
+  border: 4px solid #fff;
+  height:95px;
+  width:95px;
+}
+
+.seg-img img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    
+}
+
+/* =========== Segment Header End ================== */

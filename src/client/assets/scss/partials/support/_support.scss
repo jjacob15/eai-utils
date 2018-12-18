@@ -1,0 +1,83 @@
+/**  =====================
+      Contact-us start
+==========================  **/
+.asc-icon {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 30px;    
+    padding: 15px 15px;
+    back-align: center;
+    background-color: $color-pink;
+    color: #fff;
+    font-size: 20px;
+    
+  }
+
+.asc-icon-indigo{
+    background-color: $color-indigo;
+}
+
+.asc-icon-purple{
+    background-color: $color-purple;
+}
+
+.asc-icon-dark-orange{
+    background-color: $color-dark-orange;
+}
+
+/**  =====================
+      Contact-us css end
+==========================  **/
+
+/**  =====================
+      Videos start
+==========================  **/
+
+
+.thumbnailtitle {
+    color: #27aedb;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana
+}
+
+.videoBox {
+    display: inline-block;
+    padding: 10px;
+    border: solid 0.08em #d6d6d6;
+    border-radius: 5px;    
+    cursor: pointer;
+}
+
+.videoImage {
+    width:'150px';
+    height:'100px';
+}
+
+.videoModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top:-200px;
+    margin-left: -400px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .videoOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(111, 111, 111, 0.75);
+    opacity: 1;
+    
+  }
+
+  /**  =====================
+      Videos end
+==========================  **/

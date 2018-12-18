@@ -1,0 +1,43 @@
+/**  =====================
+      drop down css start
+==========================  **/
+.dropdown{
+    .overlay{
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      display: inline-block;
+    }
+  }
+  .dropdown-menu {
+ /*   border-radius: 0;*/
+    max-height: 300px;
+  /*  overflow:auto; */
+  }
+  
+  .dropdown-item.active, .dropdown-item:active {
+    color: $primary-color !important;
+    text-decoration: none;
+    background-color:$color-lite-blue;
+  }
+  
+  .dropdown-item.disabled, .dropdown-item:disabled {
+    color: #6c757d !important;
+  }
+  .list-item{
+    line-height: 40px;
+    padding:0.25rem 1.0rem;
+  }
+
+  .dropdown-menu-right {
+    position: absolute;
+    transform: translate3d(-120px, -5px, 0px);
+    top: 0px;
+    left: 0px;
+    will-change: transform;
+  }
+  /*===== drop down forms css end =====*/
+  

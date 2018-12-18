@@ -1,0 +1,200 @@
+/**  =====================
+      Task-list css start
+==========================  **/
+
+.task-list {
+    select {
+        width: 92%;
+
+        .task-list img {
+            margin-right: 5px;
+            display: inline-block;
+        }
+    }
+
+    input {
+        width: 80%;
+    }
+}
+
+.task-list-table img {
+    width: 40px;
+
+    i {
+        color: #333;
+        margin-right: 5px;
+    }
+}
+
+.task-page {
+    td:last-child {
+        position: relative;
+    }
+
+    a {
+        cursor: pointer;
+    }
+
+    tr td:last-child i {
+        margin-right: 10px;
+    }
+}
+/*===== Task-list css end ====*/
+
+/**  =====================
+      Task-board css start
+==========================  **/
+
+.filter-bar .nav,
+.filter-bar .nav-item {
+    display: inline-block;
+}
+
+.filter-bar > .navbar {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .05), 0 3px 1px -2px rgba(0, 0, 0, .08), 0 1px 5px 0 rgba(0, 0, 0, .08);
+    padding: 8px 20px;
+}
+
+.navbar-nav .nav-item {
+    float: left;
+    line-height: 26px;
+}
+
+.nav-item button i {
+    margin-right: 0;
+}
+
+.filter-bar .navbar-light .navbar-nav .nav-link {
+    margin-right: 10px;
+}
+
+.card-footer .task-list-table,
+.card-footer .task-list-table a img {
+    display: inline-block;
+}
+
+.task-board {
+    margin-top: 10px;
+    float: right;
+}
+
+.task-board .dropdown {
+    display: inline-block;
+}
+
+p {
+    &.task-detail {
+        margin-bottom: 5px;
+    }
+
+    &.task-due {
+        margin-bottom: 0;
+    }
+}
+
+.task-right-header-revision,
+.task-right-header-status,
+.task-right-header-users {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.taskboard-right-progress,
+.taskboard-right-revision,
+.taskboard-right-users {
+    margin-top: 10px;
+}
+
+.task-right h6 {
+    font-size: 12px;
+}
+
+.task-right .icofont {
+    margin-top: 5px;
+    margin-right: 0;
+}
+
+.taskboard-right-revision .media .media-body .chat-header {
+    font-size: 13px;
+}
+
+.media-left i {
+    margin-right: 0;
+}
+
+.nav-item.nav-grid {
+    float: right;
+}
+
+.faq-progress .progress {
+    position: relative;
+    background-color: #eeeded;
+    height: 10px;
+}
+
+.faq-progress .progress .faq-text1,
+.faq-progress .progress .faq-text2,
+.faq-progress .progress .faq-text3,
+.faq-progress .progress .faq-text4,
+.faq-progress .progress .faq-text5 {
+    font-weight: 600;
+    margin-right: -37px;
+}
+
+.faq-progress .progress .faq-bar1,
+.faq-progress .progress .faq-bar2,
+.faq-progress .progress .faq-bar3,
+.faq-progress .progress .faq-bar4,
+.faq-progress .progress .faq-bar5 {
+    background: #29aecc;
+    height: 10px;
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+}
+
+.faq-progress .progress .faq-bar1 {
+    background-color: $warning-color;
+}
+
+.faq-progress .progress .faq-text1 {
+    color: #2196F3;
+}
+
+.faq-progress .progress .faq-bar2,
+.faq-progress .progress .faq-bar5 {
+    background-color: $success-color;
+}
+
+.faq-progress .progress .faq-text2,
+.faq-progress .progress .faq-text5 {
+    color: #4CAF50;
+}
+
+.faq-progress .progress .faq-bar3 {
+    background-color: $danger-color;
+}
+
+.faq-progress .progress .faq-text3 {
+    color: #ff5252;
+}
+
+.faq-progress .progress .faq-bar4 {
+    background-color: $primary-color;
+}
+
+.faq-progress .progress .faq-text4 {
+    color: #f57c00;
+}
+
+.card-faq h4 {
+    color: #2196F3;
+}
+
+.faq-progress .progress {
+    margin-bottom: 10px;
+}
+/**====== Tsak-board css end ======**/

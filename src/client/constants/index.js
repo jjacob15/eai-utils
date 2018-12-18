@@ -1,0 +1,5 @@
+export const SET_USER = 'SET_USER';
+
+export const TOGGLE_HEADER_NAVBAR = 'TOGGLE_HEADER_NAVBAR';
+export const SET_BROWSER_SIZE = 'SET_BROWSER_SIZE';
+export const TOGGLE_SIDEBAR = 'TOGGLE_SIDEBAR';

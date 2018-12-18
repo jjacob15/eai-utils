@@ -1,0 +1,89 @@
+/* ======================
+    Panels and wells css start
+========================= */
+
+.panel {
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  }
+  
+  .panel-body p {
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+  
+  .panels-wells {
+    .panel {
+        margin-bottom: 20px;
+    }
+  
+    .panel .panel-body {
+        padding: 15px;
+    }
+  }
+  
+  .panel-heading {
+    padding: 10px 15px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  
+  .panel-footer {
+    padding: 10px 15px;
+    background-color: #fafafa;
+    border-top: 1px solid #eeeeee;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  
+  .well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+  }
+  
+  .well-sm {
+    padding: 9px;
+    border-radius: 3px;
+  }
+  
+  .well-lg {
+    padding: 24px;
+    border-radius: 6px;
+  }
+  
+  /**====== Panels and wells css end ======**/
+
+  /*======= Panels-wells-color css starts  ======= */
+
+$panel-name:primary,
+warning,
+default,
+danger,
+success,
+inverse,
+info;
+$panel-color:$primary-color,
+$warning-color,
+$default-color,
+$danger-color,
+$success-color,
+$inverse-color,
+$info-color;
+@each $var in $panel-name {
+    $i: index($panel-name, $var);
+    .panels-wells .panel-#{$var} {
+      border-color: nth($border-color, $i);
+    }
+}
+
+
+/*======= Panels-wells-color css ends  ======= */

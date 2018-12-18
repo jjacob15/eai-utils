@@ -1,0 +1,59 @@
+// General theme contents
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/general';
+
+// Menu
+@import 'partials/menu/menu';
+//@import "partials/menu/pcmenu";
+
+// Important Theme elements
+@import 'partials/theme-elements/button';
+@import 'partials/theme-elements/label-badges';
+@import 'partials/wizard/steps';
+@import 'partials/panels/panels';
+@import 'partials/section-divider/sectiondivider';
+@import 'partials/theme-elements/form-elements';
+
+// Tables
+@import 'partials/tables/tables';
+@import 'partials/tables/datatable';
+
+//Date
+@import 'partials/date/pikaday';
+// Widget
+@import 'partials/widget-dashboard/widget';
+
+// Task-list
+@import 'partials/task-list/task-list';
+
+// Multi-select List
+@import 'partials/multi-select/multi-select';
+
+// Icon-layouts
+@import 'partials/icon-layout/iconlayout';
+
+// Tabs
+@import 'partials/tabs/tabs';
+
+// Support
+@import 'partials/support/support';
+
+// Tree View
+@import 'partials/tree-view/tree-view';
+// @import 'partials/tree-view/tree-view1';
+
+// radial chart in Contact, can be deleted later
+@import 'partials/radial-bar/radial-bar';
+
+// Sliders to show ranges and values
+@import 'partials/slider/slider';
+
+// Dropdown menu styles
+@import 'partials/dropdown/dropdown';
+
+// Segment Home styles
+@import 'partials/segment-home/segment-home';
+
+
+

@@ -1,0 +1,290 @@
+/**  =====================
+      Tabs css start
+==========================  **/
+
+.tab-list p {
+  padding: 10px;
+}
+
+.tab-with-img i {
+  position: absolute;
+  padding: 5px;
+}
+
+.tab-icon {
+  margin-bottom: 30px;
+
+  i {
+      padding-right: 10px;
+  }
+}
+
+.tab-below {
+  border-top: 1px solid #ddd;
+  border-bottom: none;
+
+  &.nav-tabs .nav-link.active {
+      border-color: transparent #ddd #ddd #ddd;
+  }
+
+  .nav-item {
+      margin-top: -2px;
+  }
+
+  &.nav-tabs .nav-link {
+      border-bottom-right-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+}
+
+.card-header~.tab-icon .tab-with-img .sub-title i {
+  right: 10px;
+}
+
+.tab-with-img .nav-link {
+  position: relative;
+}
+
+.tabs-left,
+.tabs-right {
+  min-width: 120px;
+  vertical-align: top;
+  width: 150px;
+}
+
+.tabs-left,
+.tabs-left-content,
+.tabs-right,
+.tabs-right-content {
+  display: table-cell;
+}
+
+.nav-tabs.tabs-left .slide {
+  width: 4px;
+  bottom: 15px;
+}
+
+.nav-tabs.tabs-right .slide {
+  width: 4px;
+  bottom: 15px;
+  right: 0;
+}
+
+.product-edit {
+  .md-tabs {
+      .nav-item {
+          a {
+              padding: 0 0 10px !important;
+              color: $inverse-color;
+
+              .f-20 {
+                  display: inline-block;
+                  margin-right: 10px;
+              }
+          }
+      }
+  }
+}
+
+.md-tabs.tabs-left .nav-item,
+.md-tabs.tabs-right .nav-item,
+.tabs-left .nav-item,
+.tabs-right .nav-item {
+  width: 100%;
+  position: relative;
+}
+
+.md-tabs {
+  position: relative;
+
+  .nav-item+.nav-item {
+      margin: 0;
+  }
+
+  .nav-link {
+      border: none;
+      color: $inverse-color;
+      cursor: pointer;
+  }
+
+  .nav-item {
+      width: calc(100% / 7);
+      text-align: center;
+  }
+
+  .nav-link:focus,
+  .nav-link:hover {
+      border: none;
+  }
+
+  .nav-item .nav-link.active~.slide {
+      opacity: 1;
+      transition: all 0.3s ease-out;
+  }
+
+  .nav-item .nav-link~.slide {
+      opacity: 0;
+      transition: all 0.3s ease-out;
+  }
+
+  .nav-item.open .nav-link,
+  .nav-item.open .nav-link:focus,
+  .nav-item.open .nav-link:hover,
+  .nav-link.active,
+  .nav-link.active:focus,
+  .nav-link.active:hover {
+      color: $primary-color;
+      border: none;
+      background-color: transparent;
+      border-radius: 0;
+  }
+
+  .nav-item a {
+      padding: 20px 0 !important;
+      color: $inverse-color;
+  }
+}
+
+.nav-tabs .slide {
+  background: $primary-color;
+  width: calc(100% / 7);
+  height: 4px;
+  position: absolute;
+  -webkit-transition: left 0.3s ease-out;
+  transition: left 0.3s ease-out;
+  bottom: 0;
+
+  .nav-item.show .nav-link,
+  .nav-link {
+      color: $primary-color;
+  }
+}
+
+.img-tabs {
+  img {
+      width: 100px;
+      margin: 0 auto;
+  }
+
+  a {
+      opacity: 0.5;
+      transition: all ease-in-out 0.3s;
+
+      span i {
+          height: 25px;
+          width: 25px;
+          border-radius: 100%;
+          bottom: 10px;
+          right: 70px;
+      }
+
+      img {
+          border: 3px solid;
+      }
+
+      &.active {
+          opacity: 1;
+          transition: all ease-in-out 0.3s;
+      }
+  }
+
+  .nav-item:first-child {
+      border-bottom: none;
+  }
+}
+
+#pc-left-panel-menu {
+  margin-bottom: 20px;
+}
+
+.h-active a {
+  color: #1b8bf9 !important;
+  font-weight: 600;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.b-none {
+  border: none !important;
+}
+
+
+/* ==== Used in FAQ page =====*/
+
+.faq-tabs {
+    position: relative;
+  
+    .nav-item+.nav-item {
+        margin: 0;
+    }
+  
+    .nav-link {
+        border: none;
+        color: #ffffff;
+        font-weight:600;
+        cursor: pointer;
+    }
+  
+    .nav-item {
+        width: calc(100% / 7);
+        text-align: center;
+    }
+  
+    .nav-link:focus,
+    .nav-link:hover {
+        border: none;
+    }
+  
+    .nav-item .nav-link.active~.slide {
+        opacity: 1;
+        transition: all 0.3s ease-out;
+    }
+  
+    .nav-item .nav-link~.slide {
+        opacity: 0;
+        transition: all 0.3s ease-out;
+    }
+  
+    .nav-item.open .nav-link,
+    .nav-item.open .nav-link:focus,
+    .nav-item.open .nav-link:hover,
+    .nav-link.active,
+    .nav-link.active:focus,
+    .nav-link.active:hover {
+        color:$inverse-color;
+        font-weight: 600;
+        border: none;
+        background-color: #ffffff;
+        border-radius: 0;
+    }
+  
+    .nav-item a {
+        padding: 20px 0 !important;
+        color: $inverse-color;
+        font-weight: 600;
+    }
+  }
+
+  .bg-img-tabs{
+    background: url('../images/digital.jpg') no-repeat;
+    background-size: 100%;
+
+  }
+
+  .imgtext{
+    background: linear-gradient(to right,$primary-color, lighten($info-color, 10%));
+    border: solid 1px #ffffff;
+    text-align: center;    
+  }
+  
+  .textimg {
+    justify-self: center;
+    align-self: center; 
+    padding: 10px;   
+  }
+
+/**====== Tabs css end ======**/
