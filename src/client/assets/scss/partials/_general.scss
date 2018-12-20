@@ -1504,6 +1504,54 @@ $info-color;
         }
       }
   }
+
+  .boxChart{
+    font: 10px sans-serif;
+    line,
+    circle {
+      stroke: #000;
+      stroke-width: 0.5px;
+    }
+    // .center {
+    //   stroke-dasharray: 3,3;
+    // }
+    rect.rboxt{
+      fill:#E2AA00;
+      stroke: #E2AA00;
+      stroke-width: 1px;
+    }
+    rect.rboxb{
+      fill:#929292;
+      stroke: #929292;
+      stroke-width: 1px;
+    }
+    .outlier {
+      fill: none;
+      stroke: #000;
+    }
+
+    .axis {
+      font: 12px sans-serif;
+      path,line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
+    }
+    .axis.hidden{
+      text{
+        fill:transparent !important;
+      }
+      line.t{
+        stroke:transparent !important;
+      }
+    }
+    .x.axis path { 
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+  }
 }
   .chart.tooltip{
     background: rgb(61, 61, 61);
@@ -1516,6 +1564,8 @@ $info-color;
     position: fixed;
     z-index: 1000;
   }
+
+
 /*============Charts end===================*/
 
 /*============Highlighted Header start===================*/
