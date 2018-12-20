@@ -16,7 +16,7 @@ function withChart(WrappedComponent, chart) {
     }
 
     componentWillReceiveProps(nxtProps) {
-      if (this.props.data !== nxtProps.data)
+      if (this.props !== nxtProps)
         chart.draw(this.chartRef.current, nxtProps);
     }
     componentWillUnmount() {
