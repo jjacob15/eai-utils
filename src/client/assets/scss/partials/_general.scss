@@ -1552,6 +1552,43 @@ $info-color;
       shape-rendering: crispEdges;
     }
   }
+
+  .scatterChart{
+    font: 10px sans-serif;
+    line,
+
+    .axis {
+      font: 12px sans-serif;
+      path,line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
+    }
+    .axis.hidden{
+      text{
+        fill:transparent !important;
+      }
+      line.t{
+        stroke:transparent !important;
+      }
+    }
+    .x.axis path { 
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+    .dot{
+      fill:$secondary-color
+    }
+    .dot.withConnector{
+      fill:$primary-color
+    }
+    .connector{
+      stroke:$primary-color;
+      stroke-opacity:0.3;
+    }
+  }
 }
   .chart.tooltip{
     background: rgb(61, 61, 61);
