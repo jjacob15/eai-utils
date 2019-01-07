@@ -34,7 +34,7 @@ chart.create = function (el, props) {
       .append('div')
       .attr('class', 'chart tooltip')
       .style('opacity', 0);
-    chart.tooltipText = d => d.obv;
+    chart.tooltipText = d => `${d.obv} (${d.x},${d.y})`;
   }
 };
 
