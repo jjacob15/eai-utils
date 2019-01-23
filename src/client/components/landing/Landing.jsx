@@ -5,6 +5,7 @@ import ScatterPlot from '../scatterPlot';
 import BiPlot from '../biPlot';
 import CorrelationPlot from '../correlationPlot';
 import Dendrogram from '../dendrogram';
+import Radar from '../radar';
 import { Route, Switch, withRouter } from 'react-router-dom';
 
 class Landing extends React.Component {
@@ -52,6 +53,7 @@ class Landing extends React.Component {
                     <Route path="/scatter" render={() => <ScatterPlot />} />
                     <Route path="/correlation" render={() => <CorrelationPlot />} />
                     <Route path="/biplot" render={() => <BiPlot />} />
+                    <Route path="/radar" render={() => <Radar />} />
                     <Route exact path="/" render={() => <Candle />} />
                   </Switch>
                 </div>

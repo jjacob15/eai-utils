@@ -5,6 +5,7 @@ const box = { id: 'h3', label: 'Box Plot', icon: 'help', link: '/box' };
 const scatter = { id: 'scatter', label: 'Scatter Plot', icon: 'help', link: '/scatter' };
 const biPlot = { id: 'bi', label: 'Bi Plot', icon: 'help', link: '/biplot' };
 const correlation = { id: 'correlation', label: 'Correlation Plot', icon: 'help', link: '/correlation' };
+const radar = { id: 'radar', label: 'Radar', icon: 'help', link: '/radar' };
 
 export default {
   main: {
@@ -12,7 +13,7 @@ export default {
     content: [
       {
         label: 'Utils',
-        content: [candle, dendrogram, box, scatter, correlation, biPlot],
+        content: [candle, dendrogram, box, scatter, correlation, biPlot, radar],
       },
     ],
   },
