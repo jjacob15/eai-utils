@@ -52,7 +52,7 @@ var d2 = [
     { axis: "Listen Radio", value: 0.07 },
     { axis: "Sending Money", value: 0.18 },
     { axis: "Other", value: 0.07 },
-    { axis: "Use less Once week", value: 0.08 }
+    // { axis: "Use less Once week", value: 0.08 }
   ], [
     { axis: "Email", value: 0.48 },
     { axis: "Social Networks", value: 0.41 },
@@ -75,34 +75,59 @@ var d2 = [
     { axis: "Listen Radio", value: 0.06 },
     { axis: "Sending Money", value: 0.16 },
     { axis: "Other", value: 0.07 },
-    { axis: "Use less Once week", value: 0.17 }
+    // { axis: "Use less Once week", value: 0.17 }
   ]
 ];
+
+const getLimitedD2 = function (limit) {
+  return [
+    d2[0].slice(0, limit),
+    d2[1].slice(0, limit),
+  ]
+}
 class PlayGround extends React.Component {
   constructor() {
     super();
+    this.state = {
+      dataSet2: getLimitedD2(3)
+    }
+    this.handleAdd = this.handleAdd.bind(this)
+  }
+
+  handleAdd() {
+    const { dataSet2 } = this.state;
+    let len = dataSet2[0].length;
+
+    if (len === d2[0].length) len = 3;
+
+    this.setState({
+      dataSet2: getLimitedD2(len + 1)
+    })
   }
 
   render() {
+    const { dataSet2 } = this.state;
     return (
-      <div style={{ width: '100%', overflow: 'hidden' }}>
-        <div style={{ height: '450px', width: '450px', float: 'left' }}>
-          <Radar
-            data={d1}
-            style={{ background: 'transparent' }}
-            showMarker={false}
-            levels={6}
-            color={["#1b9e77", "#d95f02", "#7570b3"]} />
+      <div>
+        <button onClick={this.handleAdd} style={{ marginRight: '10px' }}>Add data</button>
+        <div style={{ width: '100%', overflow: 'hidden' }}>
+          <div style={{ height: '450px', width: '450px', float: 'left' }}>
+            <Radar
+              data={d1}
+              style={{ background: 'transparent' }}
+              showMarker={false}
+              levels={6}
+              color={["#1b9e77", "#d95f02", "#7570b3"]} />
+          </div>
+          <div style={{ height: '450px', width: '450px', marginLeft: '550px' }}>
+            <Radar
+              data={dataSet2}
+              style={{ background: 'transparent' }}
+              showMarker={true}
+              levels={4}
+              pointRadius={4} />
+          </div>
         </div>
-        <div style={{ height: '450px', width: '450px', marginLeft: '550px' }}>
-          <Radar
-            data={d2}
-            style={{ background: 'transparent' }}
-            showMarker={true}
-            levels={4}
-            pointRadius={4} />
-        </div>
-
       </div>
     );
   }

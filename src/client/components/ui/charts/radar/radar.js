@@ -30,8 +30,8 @@ var RadarChart = {
         }
 
         //avoid taking all the available height and width
-        cfg.w = cfg.w - 50;
-        cfg.h = cfg.h - 50;
+        cfg.w = cfg.w - 80;
+        cfg.h = cfg.h - 80;
 
 
 
